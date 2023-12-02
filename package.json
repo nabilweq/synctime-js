@@ -2,8 +2,14 @@
   "name": "synctime-js",
   "version": "1.0.1",
   "description": "\"synctime-js\" is a concise and clear package focused on time-related functionalities.",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "/dist"
+  ],
   "scripts": {
+    "build": "tsc",
+    "dev": "nodemon src/index.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -20,5 +26,9 @@
   "bugs": {
     "url": "https://github.com/nabilweq/synctime-js/issues"
   },
-  "homepage": "https://github.com/nabilweq/synctime-js#readme"
+  "homepage": "https://github.com/nabilweq/synctime-js#readme",
+  "devDependencies": {
+    "@types/node": "^20.10.2",
+    "typescript": "^5.3.2"
+  }
 }
