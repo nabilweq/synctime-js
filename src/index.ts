@@ -1,4 +1,12 @@
 export class SyncTime {
+
+  private timeZone: string;
+
+  constructor(timeZone: string) {
+    this.timeZone = timeZone;
+  }
+
+
   public getFormatedDate = (date:any) => {
 
     if(!date) {
@@ -39,7 +47,7 @@ export class SyncTime {
   
   public getCurrentTime = () => {
     const date = new Date();
-    const GSToffSet = 330//240; //IST is 5:30
+    const GSToffSet:any = this.timeZone//240; //IST is 5:30
     const offset = GSToffSet*60*1000;
     const GSTTime = new Date(date.getTime()+offset);
   
