@@ -1,6 +1,6 @@
 {
   "name": "synctime-js",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "\"synctime-js\" is a concise and clear package focused on time-related functionalities.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -28,6 +28,7 @@
   },
   "homepage": "https://github.com/nabilweq/synctime-js#readme",
   "devDependencies": {
+    "@types/debug": "^4.1.12",
     "@types/node": "^20.10.2",
     "typescript": "^5.3.2"
   }
