@@ -32,6 +32,7 @@ export class SyncTime {
   
         return new Date(time.toJSON().substring(0, 10))
     } else {
+      date = new Date(date);
         const offset = this.timeZone * 60 * 1000;
         const time = new Date(date.getTime()+offset);
         time.setDate(date.getDate() + val);
