@@ -16,7 +16,7 @@ const parseInput = (input: number | string): number => {
         const currentDate = new Date();
         const currentOffset = -currentDate.getTimezoneOffset();
 
-        console.log('\x1b[31m%s\x1b[0m',`synctime-js error: Invalid input provided for timezone. Hence using Local time (UTC ${currentOffset}) timezone`);
+        console.log('\x1b[31m%s\x1b[0m',`synctime-js error: Invalid input provided for timezone. Hence using Local time (UTC ${currentOffset})`);
         return currentOffset;
     }
 }
@@ -44,7 +44,7 @@ const timezoneString = (input:string): number => {
         const currentDate = new Date();
         const currentOffset = -currentDate.getTimezoneOffset();
 
-        console.log('\x1b[31m%s\x1b[0m',`synctime-js error: Invalid input provided for timezone. Hence using Local time (UTC ${currentOffset}) timezone`);
+        console.log('\x1b[31m%s\x1b[0m',`synctime-js error: Invalid input provided for timezone. Hence using Local time (UTC ${currentOffset})`);
         return currentOffset;
     }
 }
