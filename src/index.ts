@@ -164,3 +164,7 @@ export class SyncTime {
     return new Date(this.applyTimeZone(date)).toJSON().split('T')[0]
   };
 }
+
+const rr = new SyncTime('');
+
+console.log(rr.getCurrentTime().format('DD MMMM YYYY hh:mm:ss'));
