@@ -1,4 +1,4 @@
-const getFormatedDate = (date) => {
+const getFormatedDate = (date:any) => {
 
     if(!date) {
         const date = new Date();
@@ -17,7 +17,7 @@ const getFormatedDate = (date) => {
     }
 };
 
-const changeDate = (val, date='') => {
+const changeDate = (val:any, date:any='') => {
     if(!date) {
         const date = new Date();
         const GSToffSet = 330//240;
